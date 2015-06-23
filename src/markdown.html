@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS DISAGG Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+</head>
+
+<body>
+<h1>STATS DISAGG Extension Command</h1>
+
+<p>Disaggregate (distribute) a time series to a higher
+frequency, optionally with the use of other disaggregated correlated series</p>
+<div class="syntax">
+<p>STATS DISAGG LOWFREQ=<em>series</em><sup>&#42;</sup> HIGHFREQ=<em>list of series</em><br/>
+    LOWFREQSTART=<em>datespec</em> HIGHFREQSTART=<em>datespec</em> FREQUENCY=<em>integer</em><br/>
+    USEHIGHFREQ=YES<sup>&#42;&#42;</sup> or NO FIRSTPASS=YES or NO<sup>&#42;&#42;</sup></p>
+
+<p>/OPTIONS CONVERSIONTYPE=SUM<sup>&#42;&#42;</sup> or AVERAGE or FIRST or LAST<br/>
+    CONVERSIONMETHOD= CHOWLINMAXLOG<sup>&#42;&#42;</sup> or CHOWLINMINRSSECO or CHOWLINMINRSSQUI
+    or CHOWLINFIXED or FERNANDEZ or LITTERMANMAXLOG
+    or LITTERMANMINRSS or LITTERMANFIXED or DENTONCHOLETTE
+    or DENTON or OLS<br/>
+    MINRHO=number DIFFDEGREE = 0<sup>&#42;&#42;</sup> or 1 or 2<br/>
+    DENTONCRIT = PROPORTIONAL<sup>&#42;&#42;</sup> or ADDITIVE</p>
+
+<p>/OUTPUT OUTPUTDS=<em>dataset name</em> PLOT=YES<sup>&#42;&#42;</sup> or NO.</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>STATS DISAGG /HELP.  prints this information and does nothing else.</p>
+
+<pre class="example"><code>STATS DISAGG LOWFREQ=annualSales HIGHFREQ=quarterlyGNP
+FREQUENCY=4 LOWFREQSTART = 2000 HIGHFREQSTART=2000 1
+/OUTPUT OUTPUTDS=quarterlySales.
+</code></pre>
+
+<p>Whether or not a keyword is required is indicated in the description.</p>
+
+<p>This command must be executed twice in order to obtain the disaggregated series
+unless there are no high frequency indicator variables.  (This is necessary
+because high and low frequency series cannot exist in the same dataset.)
+The first time the low frequency dataset must be active, and the <strong>LOWFREQ</strong> keyword
+must be supplied.  The command is followed by DATASET ACTIVE to make the
+high frequency series dataset active, and STATS DISAGG is executed again
+to fetch these variables.  The disaggregated series is written to a new dataset.</p>
+
+<p>All keywords can be specified on either pass except that LOWFREQ must
+be given on the first pass.</p>
+
+<p><strong>LOWFREQ</strong> (required on first pass) specifies the series to be disaggregated.</p>
+
+<p><strong>HIGHFREQ</strong> (optional) specifies one or more indicator series to
+be used in disaggregating the low frequency series.  If HIGHFREQ
+is not used, the disaggregated series will be constant within the
+time points for each particular low frequency time point.</p>
+
+<p><strong>LOWFREQSTART</strong> and <strong>HIGHFREQSTART</strong> (required) specify the starting
+time of the low frequency series and, if <strong>HIGHFREQ</strong> is used, the
+high frequency series.  The value can be a single number such
+as a year, or it can be two numbers such a year and month.
+The second value is assumed to be 1 if omitted.
+If the data are not time series, use starting values of 1.</p>
+
+<p><strong>FREQUENCY</strong> specifies the frequency ratio of the low frequency
+series and the disaggregated series.  For example, to disaggregate
+quarterly data to monthly, the value would be 3.  The value must
+be an integer.</p>
+
+<p><strong>USEHIGHFREQ</strong> = NO can be specified if there will be no
+high frequency indicators.  If specified, the disaggregation
+occurs on a single pass.</p>
+
+<p>This command expects to take two passes (unless USEHIGHFREQ=NO).
+Therefore, it saves information from the first pass and expects
+a second pass to follow.  If the first pass is run but the
+procedure needs to start over with a new first pass, specify
+<strong>FIRSTPASS</strong>=YES to cause the saved information to be discarded.</p>
+
+<h2>OPTIONS</h2>
+
+<p>The OPTIONS subcommand specifies how the disaggregation is
+to be done.</p>
+
+<p><strong>CONVERSIONTYPE</strong> (optional) specifies the relationship of the 
+disaggregated values to the original.  <strong>SUM</strong> and <strong>AVERAGE</strong> specify
+that the sum or average of the entire disaggregated series equals
+the corresponding statistic for the low frequency series.
+<strong>FIRST</strong> and <strong>LAST</strong> specify that the first or last value of
+the disaggregated series equals the corresponding value
+of the low frequency series.</p>
+
+<p><strong>CONVERSIONMETHOD</strong> (optional) specifies the conversion algorithm.  The
+Chow-Lin, Litterman, and Fernandez methods (with variations)
+use generalized least squares of the low frequency variable
+on the aggregated values of the high frequency series and
+then distribute the differences in the result across the
+quarterly values.  The estimated relationship between the
+low frequency series (actual and aggregated) is assumed to
+hold also for the high frequency series.  The GLS estimators
+include estimation of an autoregression parameter, rho. 
+The OLS method does ordinary least squares (with no
+autocorrelation parameter).  These methods all require at 
+least one high frequency indicator.</p>
+
+<p>The remaining methods (Denton type) can be used with or without
+an indicator variable and  minimize the sum of squared
+deviations of the low and high frequency series using
+two additional parameters.  Only one indicator variable
+is allowed.</p>
+
+<p>For details on these algorithms, see
+<a href="http://journal.r-project.org/archive/2013-2/sax-steiner.pdf">http://journal.r-project.org/archive/2013-2/sax-steiner.pdf</a></p>
+
+<p><strong>MINRHO</strong> (optional) specifies the minimum value of the
+autocorrelation parameter and defaults to 0. Applies to
+GLS methods only.</p>
+
+<p><strong>DIFFDEGREE</strong> (optional) can be 0, 1, or 2 to determine whether
+Denton methods use levels, first difference, or 
+second difference in the minimization.</p>
+
+<p><strong>DENTONCRIT</strong> (optional) specifies whether Denton methods use
+proportional or absolute deviations in the minimization.</p>
+
+<h2>OUTPUT</h2>
+
+<p>The OUTPUT subcommand specifies the desired output.</p>
+
+<p><strong>OUTPUTDS</strong> (required) specifies a name for the output
+dataset.  The dataset will contain the disaggregated series
+and a time variable.  The dataset name must not already be
+in use.  Period 1 in the time variable has value 0
+even though the starting values count from 1.  For example,
+a starting value of 2000 1 produces a first time value of
+2000.00.</p>
+
+<p><strong>PLOT</strong> specifies whether or not to plot the actual and fitted
+low frequency values and residuals.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
