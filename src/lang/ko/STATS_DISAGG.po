@@ -1,0 +1,257 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_DISAGG.R:174
+msgid "Disaggregate Time Series"
+msgstr ""
+"시계열 데이터 통합 해제"
+
+#: STATS_DISAGG.R:175
+msgid "Disaggregate Series: Warnings"
+msgstr ""
+"시계열 데이터 통합 해제: 경고"
+
+#: STATS_DISAGG.R:221
+msgid "Low frequency step completed"
+msgstr ""
+"낮은 빈도 단계 완료"
+
+#: STATS_DISAGG.R:258
+msgid "An output dataset name is required but was not specified"
+msgstr ""
+"출력 데이터 세트 이름이 필요하지만 지정하지 않았습니다."
+
+#: STATS_DISAGG.R:263
+msgid "The output dataset name is already in use."
+msgstr ""
+"출력 데이터 세트 이름이 이미 사용 중입니다."
+
+#: STATS_DISAGG.R:269
+msgid "Starting time must be specified for all series"
+msgstr ""
+"모든 계열에 대해 시작 시간을 지정해야 합니다."
+
+#: STATS_DISAGG.R:273
+msgid "Target frequency is required but was not specified"
+msgstr ""
+"대상 빈도가 필요하지만 지정되지 않았습니다."
+
+#: STATS_DISAGG.R:280
+msgid "Disaggregation method set to Chowlinmaxlog, because Denton methods allow only one indicator"
+msgstr ""
+"Denton 방법에서는 하나의 표시자만 허용되기 때문에 데이터 통합 해제 방법이 Chowlinmaxlog로 설정되었습니다."
+
+#: STATS_DISAGG.R:303
+msgid "Disaggregation method set to Denton-Cholette, because no high frequency variables were specified"
+msgstr ""
+"높은 빈도 변수가 지정되지 않았기 때문에 데이터 통합 해제 방법이 Denton-Cholette로 설정되었습니다."
+
+#: STATS_DISAGG.R:362
+msgid "sum"
+msgstr ""
+"합"
+
+#: STATS_DISAGG.R:362
+msgid "average"
+msgstr ""
+"평균"
+
+#: STATS_DISAGG.R:362
+msgid "first"
+msgstr ""
+"처음"
+
+#: STATS_DISAGG.R:362
+msgid "last"
+msgstr ""
+"마지막"
+
+#: STATS_DISAGG.R:363
+msgid "proportional"
+msgstr ""
+"비례"
+
+#: STATS_DISAGG.R:363
+msgid "additive"
+msgstr ""
+"가법"
+
+#: STATS_DISAGG.R:370
+msgid "Low-Frequency Variable"
+msgstr ""
+"낮은 빈도 변수"
+
+#: STATS_DISAGG.R:371
+msgid "Low-Frequency Start"
+msgstr ""
+"낮은 빈도 시작"
+
+#: STATS_DISAGG.R:372
+msgid "High-Frequency Variables"
+msgstr ""
+"높은 빈도 변수"
+
+#: STATS_DISAGG.R:373
+msgid "High-Frequency Start"
+msgstr ""
+"높은 빈도 시작"
+
+#: STATS_DISAGG.R:374
+msgid "High-Frequency Dataset"
+msgstr ""
+"높은 빈도 데이터 세트"
+
+#: STATS_DISAGG.R:375
+msgid "Target Frequency"
+msgstr ""
+"대상 빈도"
+
+#: STATS_DISAGG.R:376
+msgid "Disaggregation Method"
+msgstr ""
+"데이터 통합 해제 방법"
+
+#: STATS_DISAGG.R:377
+msgid "Conversion Type"
+msgstr ""
+"변환 유형"
+
+#: STATS_DISAGG.R:378
+msgid "Denton Criterion"
+msgstr ""
+"Denton 기준"
+
+#: STATS_DISAGG.R:379
+msgid "Denton Differencing"
+msgstr ""
+"Denton 차분"
+
+#: STATS_DISAGG.R:380
+msgid "Output Dataset"
+msgstr ""
+"출력 데이터 세트"
+
+#: STATS_DISAGG.R:381
+msgid "R Squared"
+msgstr ""
+"R 제곱"
+
+#: STATS_DISAGG.R:382
+msgid "Adjusted R Squared"
+msgstr ""
+"수정된 R 제곱"
+
+#: STATS_DISAGG.R:383
+msgid "Log Likelihood"
+msgstr ""
+"로그 우도"
+
+#: STATS_DISAGG.R:384
+msgid "Degrees of Freedom"
+msgstr ""
+"자유도"
+
+#: STATS_DISAGG.R:385
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_DISAGG.R:386
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_DISAGG.R:387
+msgid "Rho"
+msgstr ""
+"로(Rho)"
+
+#: STATS_DISAGG.R:388
+msgid "Rho Lower Bound"
+msgstr ""
+"로(Rho) 하한"
+
+#: STATS_DISAGG.R:396
+#: STATS_DISAGG.R:441
+msgid "NA"
+msgstr ""
+"NA"
+
+#: STATS_DISAGG.R:415
+msgid "Values"
+msgstr ""
+"값"
+
+#: STATS_DISAGG.R:417
+msgid "Series Disaggregation Summary"
+msgstr ""
+"계열 데이터 통합 해제 요약"
+
+#: STATS_DISAGG.R:419
+msgid "Results computed by R tempdisagg package"
+msgstr ""
+"R tempdisagg 패키지에 의해 계산된 결과"
+
+#: STATS_DISAGG.R:424
+msgid "Estimate"
+msgstr ""
+"추정"
+
+#: STATS_DISAGG.R:424
+msgid "Std. Error"
+msgstr ""
+"표준오차"
+
+#: STATS_DISAGG.R:425
+msgid "t"
+msgstr ""
+"t"
+
+#: STATS_DISAGG.R:425
+msgid "Sig."
+msgstr ""
+"TPL 유의확률"
+
+#: STATS_DISAGG.R:426
+msgid "Disaggregation Indicator Coefficients"
+msgstr ""
+"데이터 통합 해제 표시자 계수"
+
+#: STATS_DISAGG.R:455
+msgid "Time"
+msgstr ""
+"시간"
+
+#: STATS_DISAGG.R:457
+msgid "Distributed from %s via %s"
+msgstr ""
+"%s에서 분배됨(%s 사용)"
+
+#: STATS_DISAGG.R:493
+msgid "End of procedure"
+msgstr ""
+"프로시저 끝"
+
+#: STATS_DISAGG.R:522
+msgid "Message Number"
+msgstr ""
+"메시지 번호"
+
+
