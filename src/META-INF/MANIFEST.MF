@@ -1,0 +1,19 @@
+Name: STATS DISAGG
+Dialog-Specs: STATS_DISAGG.spd
+Command-Specs: STATS_DISAGG.xml
+Code-Files: STATS_DISAGG.R
+Misc-Files: markdown.html,extsyntax.css,IBMdialogicon.png
+Summary: Disaggregate a time series into a series at a higher frequency
+Description: This command creates a new dataset containing a time seri
+ es at a higher frequency than the original.  It can use higher freque
+ ncy indicator variables with which the low frequency is correlated to
+  distribute the values or distribute less accurately without such ind
+ icators.  Several methods are supported.
+Author: JKP, IBM SPSS
+Version: 1.0.3
+Product-Version: 18
+Date: 14-apr-2014
+Categories: time series, disaggregation, distribution
+Plugins: R
+R-Packages: tempdisagg
+Translation-Catalogues: lang
