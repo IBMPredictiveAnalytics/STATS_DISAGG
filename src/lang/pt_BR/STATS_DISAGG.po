@@ -1,0 +1,257 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_DISAGG.R:174
+msgid "Disaggregate Time Series"
+msgstr ""
+"Desagregar séries temporais"
+
+#: STATS_DISAGG.R:175
+msgid "Disaggregate Series: Warnings"
+msgstr ""
+"Desagregar séries: avisos"
+
+#: STATS_DISAGG.R:221
+msgid "Low frequency step completed"
+msgstr ""
+"Etapa de baixa frequência concluída"
+
+#: STATS_DISAGG.R:258
+msgid "An output dataset name is required but was not specified"
+msgstr ""
+"O nome de um conjunto de dados de saída é necessário, mas não foi especificado"
+
+#: STATS_DISAGG.R:263
+msgid "The output dataset name is already in use."
+msgstr ""
+"O nome do conjunto de dados de saída já está em uso."
+
+#: STATS_DISAGG.R:269
+msgid "Starting time must be specified for all series"
+msgstr ""
+"O horário de início deve ser especificado para todas as séries"
+
+#: STATS_DISAGG.R:273
+msgid "Target frequency is required but was not specified"
+msgstr ""
+"A frequência de resposta é necessária, mas não foi especificada"
+
+#: STATS_DISAGG.R:280
+msgid "Disaggregation method set to Chowlinmaxlog, because Denton methods allow only one indicator"
+msgstr ""
+"Método de desagregação definido para Chowlinmaxlog, porque os métodos Denton permitem somente um indicador"
+
+#: STATS_DISAGG.R:303
+msgid "Disaggregation method set to Denton-Cholette, because no high frequency variables were specified"
+msgstr ""
+"Método de desagregação definido como Denton-Cholette, porque não foram especificadas variáveis de alta frequência"
+
+#: STATS_DISAGG.R:362
+msgid "sum"
+msgstr ""
+"soma"
+
+#: STATS_DISAGG.R:362
+msgid "average"
+msgstr ""
+"média"
+
+#: STATS_DISAGG.R:362
+msgid "first"
+msgstr ""
+"primeiro"
+
+#: STATS_DISAGG.R:362
+msgid "last"
+msgstr ""
+"último"
+
+#: STATS_DISAGG.R:363
+msgid "proportional"
+msgstr ""
+"proporcional"
+
+#: STATS_DISAGG.R:363
+msgid "additive"
+msgstr ""
+"aditivo"
+
+#: STATS_DISAGG.R:370
+msgid "Low-Frequency Variable"
+msgstr ""
+"Variável de baixa frequência"
+
+#: STATS_DISAGG.R:371
+msgid "Low-Frequency Start"
+msgstr ""
+"Início de baixa frequência"
+
+#: STATS_DISAGG.R:372
+msgid "High-Frequency Variables"
+msgstr ""
+"Variáveis de alta frequência"
+
+#: STATS_DISAGG.R:373
+msgid "High-Frequency Start"
+msgstr ""
+"Início de alta frequência"
+
+#: STATS_DISAGG.R:374
+msgid "High-Frequency Dataset"
+msgstr ""
+"Conjunto de dados de alta frequência"
+
+#: STATS_DISAGG.R:375
+msgid "Target Frequency"
+msgstr ""
+"Frequência de resposta"
+
+#: STATS_DISAGG.R:376
+msgid "Disaggregation Method"
+msgstr ""
+"Método de desagregação"
+
+#: STATS_DISAGG.R:377
+msgid "Conversion Type"
+msgstr ""
+"Tipo de conversão"
+
+#: STATS_DISAGG.R:378
+msgid "Denton Criterion"
+msgstr ""
+"Critério de Denton"
+
+#: STATS_DISAGG.R:379
+msgid "Denton Differencing"
+msgstr ""
+"Diferenciação de Denton"
+
+#: STATS_DISAGG.R:380
+msgid "Output Dataset"
+msgstr ""
+"Conjunto de Dados de Saída"
+
+#: STATS_DISAGG.R:381
+msgid "R Squared"
+msgstr ""
+"R ao quadrado"
+
+#: STATS_DISAGG.R:382
+msgid "Adjusted R Squared"
+msgstr ""
+"R Quadrado Ajustado"
+
+#: STATS_DISAGG.R:383
+msgid "Log Likelihood"
+msgstr ""
+"Log da Verossimilhança"
+
+#: STATS_DISAGG.R:384
+msgid "Degrees of Freedom"
+msgstr ""
+"Graus de liberdade"
+
+#: STATS_DISAGG.R:385
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_DISAGG.R:386
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_DISAGG.R:387
+msgid "Rho"
+msgstr ""
+"Rho"
+
+#: STATS_DISAGG.R:388
+msgid "Rho Lower Bound"
+msgstr ""
+"Limite inferior de Rho"
+
+#: STATS_DISAGG.R:396
+#: STATS_DISAGG.R:441
+msgid "NA"
+msgstr ""
+"NA"
+
+#: STATS_DISAGG.R:415
+msgid "Values"
+msgstr ""
+"Valores"
+
+#: STATS_DISAGG.R:417
+msgid "Series Disaggregation Summary"
+msgstr ""
+"Sumarização de desagregação de séries"
+
+#: STATS_DISAGG.R:419
+msgid "Results computed by R tempdisagg package"
+msgstr ""
+"Os resultados calculados pelo pacote R tempdisagg"
+
+#: STATS_DISAGG.R:424
+msgid "Estimate"
+msgstr ""
+"Estimativa"
+
+#: STATS_DISAGG.R:424
+msgid "Std. Error"
+msgstr ""
+"Erro Padrão"
+
+#: STATS_DISAGG.R:425
+msgid "t"
+msgstr ""
+"t"
+
+#: STATS_DISAGG.R:425
+msgid "Sig."
+msgstr ""
+"Sig."
+
+#: STATS_DISAGG.R:426
+msgid "Disaggregation Indicator Coefficients"
+msgstr ""
+"Coeficientes de Indicador de desagregação"
+
+#: STATS_DISAGG.R:455
+msgid "Time"
+msgstr ""
+"Hora"
+
+#: STATS_DISAGG.R:457
+msgid "Distributed from %s via %s"
+msgstr ""
+"Distribuído a partir de %s através de %s"
+
+#: STATS_DISAGG.R:493
+msgid "End of procedure"
+msgstr ""
+"Fim do procedimento"
+
+#: STATS_DISAGG.R:522
+msgid "Message Number"
+msgstr ""
+"Número da mensagem"
+
+
