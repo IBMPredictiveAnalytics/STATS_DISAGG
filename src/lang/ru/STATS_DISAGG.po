@@ -1,0 +1,257 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: STATS_DISAGG.R:174
+msgid "Disaggregate Time Series"
+msgstr ""
+"Разукрупнить временной ряд"
+
+#: STATS_DISAGG.R:175
+msgid "Disaggregate Series: Warnings"
+msgstr ""
+"Разукрупнить ряд: Предупреждения"
+
+#: STATS_DISAGG.R:221
+msgid "Low frequency step completed"
+msgstr ""
+"Шаг низкой частоты завершен"
+
+#: STATS_DISAGG.R:258
+msgid "An output dataset name is required but was not specified"
+msgstr ""
+"Имя выходного набора данных требуется, но не задано"
+
+#: STATS_DISAGG.R:263
+msgid "The output dataset name is already in use."
+msgstr ""
+"Имя выходного набора данных уже занято."
+
+#: STATS_DISAGG.R:269
+msgid "Starting time must be specified for all series"
+msgstr ""
+"Время начала должно быть определено для всех рядов"
+
+#: STATS_DISAGG.R:273
+msgid "Target frequency is required but was not specified"
+msgstr ""
+"Частота назначения требуется, но не задана"
+
+#: STATS_DISAGG.R:280
+msgid "Disaggregation method set to Chowlinmaxlog, because Denton methods allow only one indicator"
+msgstr ""
+"В качестве метода разукрупнения задан Chowlinmaxlog, поскольку для методов Denton допустим только один индикатор"
+
+#: STATS_DISAGG.R:303
+msgid "Disaggregation method set to Denton-Cholette, because no high frequency variables were specified"
+msgstr ""
+"В качестве метода разукрупнения задан Denton-Cholette, поскольку не заданы переменные высокой частоты"
+
+#: STATS_DISAGG.R:362
+msgid "sum"
+msgstr ""
+"сумма"
+
+#: STATS_DISAGG.R:362
+msgid "average"
+msgstr ""
+"среднее"
+
+#: STATS_DISAGG.R:362
+msgid "first"
+msgstr ""
+"первая"
+
+#: STATS_DISAGG.R:362
+msgid "last"
+msgstr ""
+"последняя"
+
+#: STATS_DISAGG.R:363
+msgid "proportional"
+msgstr ""
+"пропорциональные"
+
+#: STATS_DISAGG.R:363
+msgid "additive"
+msgstr ""
+"аддитивные"
+
+#: STATS_DISAGG.R:370
+msgid "Low-Frequency Variable"
+msgstr ""
+"Переменная низкой частоты"
+
+#: STATS_DISAGG.R:371
+msgid "Low-Frequency Start"
+msgstr ""
+"Начало низкой частоты"
+
+#: STATS_DISAGG.R:372
+msgid "High-Frequency Variables"
+msgstr ""
+"Переменные высокой частоты"
+
+#: STATS_DISAGG.R:373
+msgid "High-Frequency Start"
+msgstr ""
+"Начало высокой частоты"
+
+#: STATS_DISAGG.R:374
+msgid "High-Frequency Dataset"
+msgstr ""
+"Набор данных высокой частоты"
+
+#: STATS_DISAGG.R:375
+msgid "Target Frequency"
+msgstr ""
+"Частота назначения"
+
+#: STATS_DISAGG.R:376
+msgid "Disaggregation Method"
+msgstr ""
+"Метод разукрупнения"
+
+#: STATS_DISAGG.R:377
+msgid "Conversion Type"
+msgstr ""
+"Тип преобразования"
+
+#: STATS_DISAGG.R:378
+msgid "Denton Criterion"
+msgstr ""
+"Критерий Denton"
+
+#: STATS_DISAGG.R:379
+msgid "Denton Differencing"
+msgstr ""
+"Дифференцирование Denton"
+
+#: STATS_DISAGG.R:380
+msgid "Output Dataset"
+msgstr ""
+"Выходной набор данных"
+
+#: STATS_DISAGG.R:381
+msgid "R Squared"
+msgstr ""
+"R-квадрат"
+
+#: STATS_DISAGG.R:382
+msgid "Adjusted R Squared"
+msgstr ""
+"Скорректированный R квадрат"
+
+#: STATS_DISAGG.R:383
+msgid "Log Likelihood"
+msgstr ""
+"Логарифмическое правдоподобие"
+
+#: STATS_DISAGG.R:384
+msgid "Degrees of Freedom"
+msgstr ""
+"Степени свободы"
+
+#: STATS_DISAGG.R:385
+msgid "AIC"
+msgstr ""
+"AIC"
+
+#: STATS_DISAGG.R:386
+msgid "BIC"
+msgstr ""
+"BIC"
+
+#: STATS_DISAGG.R:387
+msgid "Rho"
+msgstr ""
+"Ро"
+
+#: STATS_DISAGG.R:388
+msgid "Rho Lower Bound"
+msgstr ""
+"Нижняя граница Ро"
+
+#: STATS_DISAGG.R:396
+#: STATS_DISAGG.R:441
+msgid "NA"
+msgstr ""
+"НП"
+
+#: STATS_DISAGG.R:415
+msgid "Values"
+msgstr ""
+"Значения"
+
+#: STATS_DISAGG.R:417
+msgid "Series Disaggregation Summary"
+msgstr ""
+"Сводка разукрупнения ряда"
+
+#: STATS_DISAGG.R:419
+msgid "Results computed by R tempdisagg package"
+msgstr ""
+"Результаты, вычисленные пакетом R tempdisagg"
+
+#: STATS_DISAGG.R:424
+msgid "Estimate"
+msgstr ""
+"Оценка"
+
+#: STATS_DISAGG.R:424
+msgid "Std. Error"
+msgstr ""
+"Стд. ошибка"
+
+#: STATS_DISAGG.R:425
+msgid "t"
+msgstr ""
+"т"
+
+#: STATS_DISAGG.R:425
+msgid "Sig."
+msgstr ""
+"Значимость"
+
+#: STATS_DISAGG.R:426
+msgid "Disaggregation Indicator Coefficients"
+msgstr ""
+"Коэффициенты индикатора разукрупнения"
+
+#: STATS_DISAGG.R:455
+msgid "Time"
+msgstr ""
+"Время"
+
+#: STATS_DISAGG.R:457
+msgid "Distributed from %s via %s"
+msgstr ""
+"Распределение из %s через %s"
+
+#: STATS_DISAGG.R:493
+msgid "End of procedure"
+msgstr ""
+"Конец процедуры"
+
+#: STATS_DISAGG.R:522
+msgid "Message Number"
+msgstr ""
+"Номер сообщения"
+
+
