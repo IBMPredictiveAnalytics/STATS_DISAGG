@@ -1,11 +1,11 @@
 # STATS DISAGG
 ## Disaggregate a time series into a series at a higher frequency
- This command creates a new dataset containing a time seri
+ This command creates a new dataset containing a time series at a higher frequency than the original.  It can use higher frequency indicator variables with which the low frequency is correlated to distribute the values or distribute less accurately without such indicators.  Several methods are supported.
 
 ---
 Requirements
 ----
-- IBM SPSS Statistics 18 or later
+- IBM SPSS Statistics 18 or later and the corresponding IBM SPSS Statistics-Integration Plug-in for R.
 
 ---
 Installation intructions
